@@ -1,0 +1,12 @@
+# local tooling / OS cruft — never published
+.claude/
+.serena/
+.code-review-graph/
+CLAUDE.md
+.DS_Store
+**/.DS_Store
+
+# scratch & content that belongs in other repos
+inspiration/
+github-profile/
+.playwright-mcp/

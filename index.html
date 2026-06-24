@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastian Volling · Senior iOS Engineer & Tech Lead</title>
+  <meta name="description" content="Senior iOS Engineer & Tech Lead. 12+ years building and shipping production apps across the full Apple stack: SwiftUI, Swift Concurrency, ARKit, on-device AI and server-side Swift." />
+  <meta name="author" content="Sebastian Volling" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sebastian Volling · Senior iOS Engineer & Tech Lead" />
+  <meta property="og:description" content="12+ years shipping production iOS apps. SwiftUI · Swift Concurrency · ARKit · on-device AI · server-side Swift." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2316161a'/><text x='50' y='68' font-size='54' font-family='monospace' fill='%234ade80' text-anchor='middle'>SV</text></svg>" />
+</head>
+<body>
+  <!-- ───────────── terminal top bar ───────────── -->
+  <div class="termbar">
+    <div class="termbar__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="termbar__path"><span class="prompt">sebastian@bali</span> ~/portfolio <span class="cursor">$</span></div>
+    <div class="termbar__controls">
+      <button id="lang-toggle" class="ctl" aria-label="Switch language" title="Switch language">⌘ <span id="lang-label">EN</span></button>
+      <button id="theme-toggle" class="ctl" aria-label="Toggle theme" title="Toggle theme">◑ <span data-en="theme" data-de="theme">theme</span>:<span id="theme-label">light</span></button>
+      <a class="ctl ctl--accent" href="mailto:sebastian.volling@icloud.com" data-en="contact" data-de="kontakt">contact</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- ───────────── sidebar ───────────── -->
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+        <div class="avatar" aria-hidden="true">SV</div>
+        <h1 class="sidebar__name">Sebastian Volling</h1>
+        <p class="sidebar__role" data-en="Senior iOS Engineer &amp; Tech Lead" data-de="Senior iOS Engineer &amp; Tech Lead">Senior iOS Engineer &amp; Tech Lead</p>
+
+        <nav class="nav" aria-label="Sections">
+          <a href="#summary"    class="nav__link"><span class="nav__num">01</span><span data-en="summary"    data-de="profil">summary</span></a>
+          <a href="#experience" class="nav__link"><span class="nav__num">02</span><span data-en="experience" data-de="erfahrung">experience</span></a>
+          <a href="#projects"   class="nav__link"><span class="nav__num">03</span><span data-en="projects"   data-de="projekte">projects</span></a>
+          <a href="#skills"     class="nav__link"><span class="nav__num">04</span><span data-en="skills"     data-de="skills">skills</span></a>
+          <a href="#contact"    class="nav__link"><span class="nav__num">05</span><span data-en="contact"    data-de="kontakt">contact</span></a>
+        </nav>
+
+        <div class="status"><span class="status__dot"></span><span data-en="open to new roles" data-de="offen für neue Rollen">open to new roles</span></div>
+        <p class="sidebar__loc">📍 <span data-en="Bali, Indonesia · Remote · GMT+8" data-de="Bali, Indonesien · Remote · GMT+8">Bali, Indonesia · Remote · GMT+8</span></p>
+        <a id="resume-link" class="resume-btn" href="assets/cv/CV-EN.pdf" download>↓ <span data-en="download résumé" data-de="Lebenslauf laden">download résumé</span></a>
+      </div>
+    </aside>
+
+    <!-- ───────────── main ───────────── -->
+    <main class="main">
+
+      <!-- 01 SUMMARY -->
+      <section id="summary" class="section">
+        <p class="section__label">// 01 · <span data-en="SUMMARY" data-de="PROFIL">SUMMARY</span></p>
+        <h2 class="headline">
+          <span data-en="Build it end to end." data-de="End-to-End gebaut.">Build it end to end.</span><br />
+          <span class="headline--muted" data-en="Ship it to the Store." data-de="In den Store gebracht.">Ship it to the Store.</span>
+        </h2>
+        <p class="lede" data-en="Senior iOS engineer with 12+ years building and shipping production apps across the full Apple stack, from SwiftUI and Swift Concurrency to ARKit and on-device ML. Comfortable owning a feature end to end: native iOS frontend, server-side Swift, and the architecture decisions in between. I've led small remote teams, modernized legacy codebases, and delivered across regulated domains: aviation, public sector, and education."
+           data-de="Senior iOS Engineer mit 12+ Jahren Erfahrung im Bauen und Ausliefern von Production-Apps über den gesamten Apple-Stack, von SwiftUI und Swift Concurrency bis ARKit und On-Device-ML. Ich verantworte Features end to end: natives iOS-Frontend, Server-side Swift und die Architektur dazwischen. Ich habe kleine Remote-Teams geführt, Legacy-Codebasen modernisiert und in regulierten Domänen geliefert: Luftfahrt, öffentlicher Sektor und Bildung.">
+        </p>
+
+        <div class="stats">
+          <div class="stat"><span class="stat__num">12<span class="stat__plus">+</span></span><span class="stat__key">years_experience</span></div>
+          <div class="stat"><span class="stat__num">20<span class="stat__plus">+</span></span><span class="stat__key">apps_shipped</span></div>
+          <div class="stat"><span class="stat__num">6</span><span class="stat__key">languages_used</span></div>
+        </div>
+
+        <ul class="highlights">
+          <li>★ <span data-en="On-device LLM tutoring, fully offline" data-de="On-Device-LLM-Tutoring, komplett offline">On-device LLM tutoring, fully offline</span></li>
+          <li>★ <span data-en="Shipped an AR + blockchain game to both stores" data-de="AR- + Blockchain-Game in beide Stores gebracht">Shipped an AR + blockchain game to both stores</span></li>
+          <li>★ <span data-en="Refactored core architecture TCA → MVVM" data-de="Kern-Architektur von TCA → MVVM refaktoriert">Refactored core architecture TCA → MVVM</span></li>
+          <li>★ <span data-en="RoomPlan SDK → automatic 2D floor plans" data-de="RoomPlan-SDK → automatische 2D-Grundrisse">RoomPlan SDK → automatic 2D floor plans</span></li>
+          <li>★ <span data-en="In-app Swift web server, 600+ lecture notes" data-de="In-App-Swift-Webserver, 600+ Skripte">In-app Swift web server, 600+ lecture notes</span></li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">#ios-developer</span>
+          <span class="tag">#tech-lead</span>
+          <span class="tag">#on-device-ai</span>
+          <span class="tag">#full-stack-swift</span>
+          <span class="tag">#indie-developer</span>
+        </div>
+      </section>
+
+      <!-- 02 EXPERIENCE -->
+      <section id="experience" class="section">
+        <p class="section__label">// 02 · <span data-en="EXPERIENCE" data-de="ERFAHRUNG">EXPERIENCE</span></p>
+        <div class="timeline">
+
+          <article class="job">
+            <div class="job__head">
+              <h3 class="job__co">Jamitlabs</h3>
+              <span class="job__date">02/2025 – 12/2025</span>
+            </div>
+            <p class="job__role" data-en="Freelance iOS Developer · Remote" data-de="Freelance iOS Developer · Remote">Freelance iOS Developer · Remote</p>
+            <p class="job__desc" data-en="Delivered features across three iOS apps (PasKal, DocuSketch, InstantFloorplan) and acted as the communication bridge between client and external team. Refactored core architecture from TCA to MVVM, introduced Swift Concurrency, and integrated Apple's RoomPlan SDK for room scanning and 2D floor-plan generation."
+               data-de="Features über drei iOS-Apps geliefert (PasKal, DocuSketch, InstantFloorplan) und als Kommunikationsbrücke zwischen Kunde und externem Team agiert. Kern-Architektur von TCA auf MVVM refaktoriert, Swift Concurrency eingeführt und Apples RoomPlan-SDK für Raumscanning und 2D-Grundriss-Generierung integriert."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">RoomPlan</span><span class="chip">MVVM</span><span class="chip">Swift Concurrency</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job__head">
+              <h3 class="job__co">IU International University of Applied Sciences</h3>
+              <span class="job__date">04/2022 – 05/2025</span>
+            </div>
+            <p class="job__role" data-en="Lead iOS Developer · Remote (Munich)" data-de="Lead iOS Developer · Remote (München)">Lead iOS Developer · Remote (Munich)</p>
+            <p class="job__desc" data-en="Led a team of up to 4 iOS developers and owned feature delivery with the PO and stakeholders. Integrated on-device LLM inference for offline AI tutoring: no server round-trips, full control over latency and user data. Built an in-app Swift web server for hybrid delivery of 600+ lecture notes."
+               data-de="Ein Team von bis zu 4 iOS-Entwicklern geführt und Feature-Delivery mit PO und Stakeholdern verantwortet. On-Device-LLM-Inferenz für Offline-AI-Tutoring integriert: keine Server-Roundtrips, volle Kontrolle über Latenz und Nutzerdaten. In-App-Swift-Webserver für hybride Auslieferung von 600+ Skripten gebaut."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">On-device LLM</span><span class="chip">Team Lead</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job__head">
+              <h3 class="job__co">Lufthansa Industry Solutions</h3>
+              <span class="job__date">09/2018 – 03/2022</span>
+            </div>
+            <p class="job__role" data-en="IT Consultant · Oldenburg &amp; Remote" data-de="IT Consultant · Oldenburg &amp; Remote">IT Consultant · Oldenburg &amp; Remote</p>
+            <p class="job__desc" data-en="Native iOS, cross-platform and full-stack backend work across enterprise clients in a regulated aviation environment: Hermes (Kotlin Spring Boot API, Android app, TypeScript frontend, AWS, Terraform), Lufthansa Technik / Aviatar (Kotlin Spring Boot, MSSQL, OpenShift, Azure), LH Cargo (Xamarin C# + native iOS), Linde and LHIND (native iOS + Kotlin/Java backends)."
+               data-de="Natives iOS, Cross-Platform und Full-Stack-Backend für Enterprise-Kunden im regulierten Luftfahrtumfeld: Hermes (Kotlin Spring Boot API, Android-App, TypeScript-Frontend, AWS, Terraform), Lufthansa Technik / Aviatar (Kotlin Spring Boot, MSSQL, OpenShift, Azure), LH Cargo (Xamarin C# + natives iOS), Linde und LHIND (natives iOS + Kotlin/Java-Backends)."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">Kotlin</span><span class="chip">Xamarin</span><span class="chip">Spring Boot</span><span class="chip">AWS</span><span class="chip">Azure</span></div>
+          </article>
+
+          <article class="job">
+            <div class="job__head">
+              <h3 class="job__co">GovConnect GmbH</h3>
+              <span class="job__date">12/2015 – 08/2018</span>
+            </div>
+            <p class="job__role" data-en="Senior iOS Developer · Oldenburg" data-de="Senior iOS Developer · Oldenburg">Senior iOS Developer · Oldenburg</p>
+            <p class="job__desc" data-en="Led a two-person team and shipped pmOWI, a digital parking-enforcement app (Objective-C &amp; Swift) for municipal authorities. Built a Xamarin C# app delivering near-identical features across Android and Windows Mobile."
+               data-de="Ein Zweier-Team geführt und pmOWI ausgeliefert, eine digitale Parkraumüberwachungs-App (Objective-C &amp; Swift) für Kommunen. Eine Xamarin-C#-App gebaut, die nahezu identische Features über Android und Windows Mobile bereitstellt."></p>
+            <div class="chips"><span class="chip">Objective-C</span><span class="chip">Swift</span><span class="chip">Xamarin</span><span class="chip">Public Sector</span></div>
+          </article>
+
+          <article class="job job--compact">
+            <div class="job__head">
+              <h3 class="job__co">Teamplace GmbH</h3>
+              <span class="job__date">01/2015 – 11/2015</span>
+            </div>
+            <p class="job__role" data-en="iOS Developer · Berlin" data-de="iOS Developer · Berlin">iOS Developer · Berlin</p>
+            <p class="job__desc" data-en="Implemented push notifications, In-App Purchases (StoreKit) and shared-document collaboration. Initiated the team's transition from Objective-C to Swift."
+               data-de="Push-Notifications, In-App-Käufe (StoreKit) und Kollaboration für geteilte Dokumente umgesetzt. Den Umstieg des Teams von Objective-C auf Swift initiiert."></p>
+          </article>
+
+          <article class="job job--compact">
+            <div class="job__head">
+              <h3 class="job__co">expectare Deutschland GmbH</h3>
+              <span class="job__date">05/2014 – 12/2014</span>
+            </div>
+            <p class="job__role" data-en="iOS Developer · Berlin" data-de="iOS Developer · Berlin">iOS Developer · Berlin</p>
+            <p class="job__desc" data-en="Built and maintained iOS apps for pharma and enterprise clients." data-de="iOS-Apps für Pharma- und Enterprise-Kunden gebaut und gewartet.">Built and maintained iOS apps for pharma and enterprise clients.</p>
+          </article>
+
+          <article class="job job--compact">
+            <div class="job__head">
+              <h3 class="job__co">datedicted GmbH</h3>
+              <span class="job__date">04/2013 – 05/2014</span>
+            </div>
+            <p class="job__role" data-en="iOS Developer · Berlin" data-de="iOS Developer · Berlin">iOS Developer · Berlin</p>
+            <p class="job__desc" data-en="Developed the YU-Yuppiu app and an AWS S3-backed distributed file system for user data, with a simple interface for non-technical staff."
+               data-de="Die YU-Yuppiu-App und ein AWS-S3-gestütztes verteiltes Dateisystem für Nutzerdaten entwickelt, mit einfacher Oberfläche für nicht-technisches Personal.">Developed the YU-Yuppiu app and an AWS S3-backed distributed file system for user data.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 03 PROJECTS -->
+      <section id="projects" class="section">
+        <p class="section__label">// 03 · <span data-en="PROJECTS" data-de="PROJEKTE">PROJECTS</span></p>
+
+        <h3 class="group-label"># <span data-en="Own products" data-de="Eigene Produkte">Own products</span> <span class="group-label__sub" data-en="· PT ITropical Live Solutions" data-de="· PT ITropical Live Solutions">· PT ITropical Live Solutions</span></h3>
+        <div class="cards">
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/evanthium.webp" alt="Evanthium app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">Evanthium</h4>
+                <span class="card__year">2025 – <span data-en="now" data-de="jetzt">now</span></span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Location-based AR fantasy game with blockchain integration, owned end to end. Full stack: server-side Swift (Vapor) backend, native iOS client, Android app (Kotlin), real-time location processing and crypto-token integration. Shipped to App Store and Google Play."
+               data-de="Standortbasiertes AR-Fantasy-Game mit Blockchain-Integration, end to end verantwortet. Full-Stack: Server-side-Swift-Backend (Vapor), nativer iOS-Client, Android-App (Kotlin), Echtzeit-Standortverarbeitung und Krypto-Token-Integration. In App Store und Google Play ausgeliefert."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">Vapor</span><span class="chip">ARKit</span><span class="chip">Kotlin</span><span class="chip">WebSockets</span><span class="chip">Blockchain</span><span class="chip">Gradle</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/01.webp"><img src="assets/screenshots/evanthium/01.webp" alt="Evanthium screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/02.webp"><img src="assets/screenshots/evanthium/02.webp" alt="Evanthium screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/03.webp"><img src="assets/screenshots/evanthium/03.webp" alt="Evanthium screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/04.webp"><img src="assets/screenshots/evanthium/04.webp" alt="Evanthium screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/05.webp"><img src="assets/screenshots/evanthium/05.webp" alt="Evanthium screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/evanthium/06.webp"><img src="assets/screenshots/evanthium/06.webp" alt="Evanthium screenshot 6" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://evanthium.com/" target="_blank" rel="noopener">Website ↗</a>
+              <a href="https://apps.apple.com/app/id6758009361" target="_blank" rel="noopener">App Store ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=com.ssaj.evs" target="_blank" rel="noopener">Google Play ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/dicetales.webp" alt="DiceTales app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">DiceTales</h4>
+                <span class="card__year">2023</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="AI-powered interactive storytelling app, built and shipped solo. Roll the dice and an LLM writes a unique fantasy story, read aloud by a narrator voice, with themed dice packs and a personal story library."
+               data-de="KI-gestützte interaktive Storytelling-App, solo gebaut und ausgeliefert. Würfle, und ein LLM schreibt eine einzigartige Fantasy-Geschichte, vorgelesen von einer Erzählerstimme, mit thematischen Würfel-Packs und persönlicher Story-Bibliothek."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">LLM API</span><span class="chip">Streaming UX</span><span class="chip">Firebase</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dicetales/01.webp"><img src="assets/screenshots/dicetales/01.webp" alt="DiceTales screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dicetales/02.webp"><img src="assets/screenshots/dicetales/02.webp" alt="DiceTales screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dicetales/03.webp"><img src="assets/screenshots/dicetales/03.webp" alt="DiceTales screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dicetales/04.webp"><img src="assets/screenshots/dicetales/04.webp" alt="DiceTales screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dicetales/05.webp"><img src="assets/screenshots/dicetales/05.webp" alt="DiceTales screenshot 5" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://dicetales.itropical-live-solutions.com/" target="_blank" rel="noopener">Website ↗</a>
+              <a href="https://apps.apple.com/app/dicetales/id6478500774" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/markr.webp" alt="Markr app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">Markr · Save Places</h4>
+                <span class="card__year">2025</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Lightweight location-saving app, designed and shipped solo. Save places with photos, notes and categories. Everything stays on device and exports to JSON or CSV."
+               data-de="Schlanke App zum Speichern von Orten, solo designt und ausgeliefert. Orte mit Fotos, Notizen und Kategorien speichern. Alles bleibt auf dem Gerät und exportiert nach JSON oder CSV."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">Local storage</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/markr/01.webp"><img src="assets/screenshots/markr/01.webp" alt="Markr screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/markr/02.webp"><img src="assets/screenshots/markr/02.webp" alt="Markr screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/markr/03.webp"><img src="assets/screenshots/markr/03.webp" alt="Markr screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/markr/04.webp"><img src="assets/screenshots/markr/04.webp" alt="Markr screenshot 4" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://markr-save-places.com/" target="_blank" rel="noopener">Website ↗</a>
+              <a href="https://apps.apple.com/app/markr-save-places/id6752721249" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="group-label"># <span data-en="Selected client work" data-de="Ausgewählte Kundenprojekte">Selected client work</span></h3>
+        <div class="cards">
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/iu-mycampus.jpg" alt="IU myCampus app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">myCampus</h4>
+                <span class="card__year">2022 – 2025</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Student app for IU International University: timetable, courses and 600+ lecture notes on the phone. Integrated on-device LLM inference for offline AI tutoring, backed by an in-app Swift web server for hybrid content delivery."
+               data-de="Studierenden-App für die IU Internationale Hochschule: Stundenplan, Kurse und 600+ Skripte auf dem Handy. On-Device-LLM-Inferenz für Offline-AI-Tutoring integriert, gestützt auf einen In-App-Swift-Webserver für hybride Content-Auslieferung."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">SwiftUI</span><span class="chip">On-device LLM</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/01.webp"><img src="assets/screenshots/mycampus/01.webp" alt="IU myCampus screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/02.webp"><img src="assets/screenshots/mycampus/02.webp" alt="IU myCampus screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/03.webp"><img src="assets/screenshots/mycampus/03.webp" alt="IU myCampus screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/04.webp"><img src="assets/screenshots/mycampus/04.webp" alt="IU myCampus screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/05.webp"><img src="assets/screenshots/mycampus/05.webp" alt="IU myCampus screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/06.webp"><img src="assets/screenshots/mycampus/06.webp" alt="IU myCampus screenshot 6" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/07.webp"><img src="assets/screenshots/mycampus/07.webp" alt="IU myCampus screenshot 7" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/mycampus/08.webp"><img src="assets/screenshots/mycampus/08.webp" alt="IU myCampus screenshot 8" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://apps.apple.com/at/app/iu-mycampus/id6737234634" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/iulearn.webp" alt="IU Learn logo" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">Learn</h4>
+                <span class="card__year">2022 – 2025</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Second-generation student app for IU on a micro-app architecture: a native Objective-C/Swift host with self-contained web micro-apps bridged via JavaScript. Covered reading, audio lectures, vodcasts, quizzes and flashcards. Now retired." data-de="Studierenden-App der zweiten Generation für die IU auf Micro-App-Architektur: ein nativer Objective-C/Swift-Host mit gekapselten Web-Micro-Apps über eine JavaScript-Bridge. Umfasste Reader, Audio-Vorlesungen, Vodcasts, Quizze und Karteikarten. Inzwischen abgelöst."></p>
+            <div class="chips"><span class="chip">Objective-C</span><span class="chip">Swift</span><span class="chip">JS Bridge</span><span class="chip">Micro-Apps</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/01.webp"><img src="assets/screenshots/iulearn/01.webp" alt="IU Learn screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/02.webp"><img src="assets/screenshots/iulearn/02.webp" alt="IU Learn screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/03.webp"><img src="assets/screenshots/iulearn/03.webp" alt="IU Learn screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/04.webp"><img src="assets/screenshots/iulearn/04.webp" alt="IU Learn screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/05.webp"><img src="assets/screenshots/iulearn/05.webp" alt="IU Learn screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/06.webp"><img src="assets/screenshots/iulearn/06.webp" alt="IU Learn screenshot 6" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/07.webp"><img src="assets/screenshots/iulearn/07.webp" alt="IU Learn screenshot 7" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/iulearn/08.webp"><img src="assets/screenshots/iulearn/08.webp" alt="IU Learn screenshot 8" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/paskal.jpg" alt="PASKAL 3D app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">PASKAL 3D</h4>
+                <span class="card__year">2025</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="3D refraction software for opticians on iPad, CE-certified as a medical device. Delivered features as a freelance iOS developer at Jamitlabs."
+               data-de="3D-Refraktionssoftware für Optiker auf dem iPad, CE-zertifiziert als Medizinprodukt. Features als Freelance-iOS-Entwickler bei Jamitlabs geliefert."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">iPad</span><span class="chip">MedTech</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/paskal/01.webp"><img src="assets/screenshots/paskal/01.webp" alt="PASKAL 3D screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/paskal/02.webp"><img src="assets/screenshots/paskal/02.webp" alt="PASKAL 3D screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/paskal/03.webp"><img src="assets/screenshots/paskal/03.webp" alt="PASKAL 3D screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/paskal/04.webp"><img src="assets/screenshots/paskal/04.webp" alt="PASKAL 3D screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/paskal/05.webp"><img src="assets/screenshots/paskal/05.webp" alt="PASKAL 3D screenshot 5" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://apps.apple.com/id/app/paskal-3d-legacy/id1465107318" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/docusketch.jpg" alt="DocuSketch app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">DocuSketch°</h4>
+                <span class="card__year">2025</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="360° documentation and estimating for restoration businesses. Integrated Apple's RoomPlan SDK for room scanning and automatic 2D floor-plan generation."
+               data-de="360°-Dokumentation und Kalkulation für Sanierungsbetriebe. Apples RoomPlan-SDK für Raumscanning und automatische 2D-Grundriss-Generierung integriert."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">RoomPlan</span><span class="chip">ARKit</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/01.webp"><img src="assets/screenshots/docusketch/01.webp" alt="DocuSketch screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/02.webp"><img src="assets/screenshots/docusketch/02.webp" alt="DocuSketch screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/03.webp"><img src="assets/screenshots/docusketch/03.webp" alt="DocuSketch screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/04.webp"><img src="assets/screenshots/docusketch/04.webp" alt="DocuSketch screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/05.webp"><img src="assets/screenshots/docusketch/05.webp" alt="DocuSketch screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/06.webp"><img src="assets/screenshots/docusketch/06.webp" alt="DocuSketch screenshot 6" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/07.webp"><img src="assets/screenshots/docusketch/07.webp" alt="DocuSketch screenshot 7" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docusketch/08.webp"><img src="assets/screenshots/docusketch/08.webp" alt="DocuSketch screenshot 8" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://apps.apple.com/us/app/docusketch%C2%BA/id1390982212" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/linde.jpg" alt="Linde Installation app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">Linde Installation App</h4>
+                <span class="card__year">2018 – 2022</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Field app for Linde gas devices. Technicians capture device data, locations and installation details on site. Native iOS, delivered at Lufthansa Industry Solutions."
+               data-de="Field-App für Linde-Gasgeräte. Techniker erfassen Gerätedaten, Standorte und Installationsdetails vor Ort. Natives iOS, geliefert bei Lufthansa Industry Solutions."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">Field app</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/01.webp"><img src="assets/screenshots/linde/01.webp" alt="Linde Installation App screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/02.webp"><img src="assets/screenshots/linde/02.webp" alt="Linde Installation App screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/03.webp"><img src="assets/screenshots/linde/03.webp" alt="Linde Installation App screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/04.webp"><img src="assets/screenshots/linde/04.webp" alt="Linde Installation App screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/05.webp"><img src="assets/screenshots/linde/05.webp" alt="Linde Installation App screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/linde/06.webp"><img src="assets/screenshots/linde/06.webp" alt="Linde Installation App screenshot 6" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://apps.apple.com/ie/app/installation-app/id1315570193" target="_blank" rel="noopener">App Store ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">CI</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">CheckIn App</h4>
+                <span class="card__year">2018 – 2022</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS app for Lufthansa Cargo pilots to organise their flights: duty plans, rotations and briefings on the phone. Feature work and refactoring at Lufthansa Industry Solutions." data-de="Native iOS-App für Piloten der Lufthansa Cargo zur Flugorganisation: Dutyplan, Rotationen und Briefings auf dem Handy. Feature-Arbeit und Refactoring bei Lufthansa Industry Solutions."></p>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">iOS</span><span class="chip">LH Cargo</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/01.webp"><img src="assets/screenshots/checkin/01.webp" alt="CheckIn screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/02.webp"><img src="assets/screenshots/checkin/02.webp" alt="CheckIn screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/03.webp"><img src="assets/screenshots/checkin/03.webp" alt="CheckIn screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/04.webp"><img src="assets/screenshots/checkin/04.webp" alt="CheckIn screenshot 4" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/05.webp"><img src="assets/screenshots/checkin/05.webp" alt="CheckIn screenshot 5" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/06.webp"><img src="assets/screenshots/checkin/06.webp" alt="CheckIn screenshot 6" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/checkin/07.webp"><img src="assets/screenshots/checkin/07.webp" alt="CheckIn screenshot 7" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <span class="card__avail" data-en="iOS · Internal only" data-de="iOS · nur intern">iOS · Internal only</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/pmowi.png" alt="pmOWI app icon" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">pmOWI</h4>
+                <span class="card__year">2015 – 2018</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Public-order / parking-enforcement recording for German municipalities. Built the iOS version (Objective-C &amp; Swift); ships through an enterprise store, with an identical Android app on Google Play."
+               data-de="Erfassung von Ordnungswidrigkeiten / Parkverstößen für deutsche Kommunen. Die iOS-Version gebaut (Objective-C &amp; Swift); Auslieferung über einen Enterprise-Store, identische Android-App im Google Play Store."></p>
+            <div class="chips"><span class="chip">Objective-C</span><span class="chip">Swift</span><span class="chip">Enterprise</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pmowi/01.webp"><img src="assets/screenshots/pmowi/01.webp" alt="pmOWI screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pmowi/02.webp"><img src="assets/screenshots/pmowi/02.webp" alt="pmOWI screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pmowi/03.webp"><img src="assets/screenshots/pmowi/03.webp" alt="pmOWI screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+            <div class="card__links">
+              <a href="https://play.google.com/store/apps/details?id=govconnect.de.pmowi" target="_blank" rel="noopener">Google Play ↗</a>
+              <span class="card__avail" data-en="iOS · Enterprise only" data-de="iOS · nur Enterprise">iOS · Enterprise only</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/aviatar.png" alt="AVIATAR logo" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">AVIATAR</h4>
+                <span class="card__year">2018 – 2022</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Lufthansa Technik's aviation platform for condition monitoring and predictive maintenance of aircraft fleets. Backend work: Kotlin Spring Boot, MSSQL, OpenShift, Azure."
+               data-de="Luftfahrtplattform von Lufthansa Technik für Condition-Monitoring und Predictive Maintenance von Flugzeugflotten. Backend-Arbeit: Kotlin Spring Boot, MSSQL, OpenShift, Azure."></p>
+            <div class="chips"><span class="chip">Kotlin</span><span class="chip">Spring Boot</span><span class="chip">Azure</span></div>
+            <div class="card__links">
+              <a href="https://www.aviatar.com/en" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <img class="card__icon" src="assets/icons/hermes.png" alt="Hermes logo" loading="lazy" width="44" height="44" />
+              <div class="card__titlewrap">
+                <h4 class="card__title">Hermes · Last Mile</h4>
+                <span class="card__year">2018 – 2022</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Last-mile delivery for Hermes: a Kotlin Android driver app and the TypeScript dashboard behind it, on a Kotlin Spring Boot API. AWS &amp; Terraform infrastructure."
+               data-de="Last-Mile-Zustellung für Hermes: eine Kotlin-Android-Fahrer-App und das TypeScript-Dashboard dahinter, auf einer Kotlin-Spring-Boot-API. AWS- &amp; Terraform-Infrastruktur."></p>
+            <div class="chips"><span class="chip">Kotlin</span><span class="chip">TypeScript</span><span class="chip">AWS</span><span class="chip">Terraform</span><span class="chip">Gradle</span></div>
+            <div class="card__links">
+              <span class="card__avail" data-en="Android · Internal only" data-de="Android · nur intern">Android · Internal only</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">PS</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">Push-Service</h4>
+                <span class="card__year">2019</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Backend for end-to-end encrypted push notifications on iOS. Designed the schema, built the encryption library as a Maven dependency and an iOS framework for decrypting and handling messages. In production it handles over 1 million internal push messages per day." data-de="Backend für Ende-zu-Ende-verschlüsselte Push-Nachrichten auf iOS. Schema entworfen, die Verschlüsselungs-Library als Maven-Dependency und ein iOS-Framework zum Entschlüsseln und Handling der Nachrichten gebaut. Im Betrieb über 1 Million interne Push-Nachrichten pro Tag."></p>
+            <div class="chips"><span class="chip">Backend</span><span class="chip">E2E Encryption</span><span class="chip">iOS Framework</span><span class="chip">Maven</span></div>
+            <div class="card__links">
+              <span class="card__avail" data-en="Internal only" data-de="Nur intern">Internal only</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">LF</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">LATFlashCards</h4>
+                <span class="card__year">2019</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Cross-platform flashcard learning app for Lufthansa Aviation Training. Owned the concept, business logic and the iOS UI/UX." data-de="Cross-Platform-Karteikarten-Lern-App für das Lufthansa Aviation Training. Konzept, Business-Logik und das iOS-UI/UX verantwortet."></p>
+            <div class="chips"><span class="chip">Cross-platform</span><span class="chip">iOS</span><span class="chip">EdTech</span></div>
+            <div class="card__links">
+              <span class="card__avail" data-en="iOS · Internal only" data-de="iOS · nur intern">iOS · Internal only</span>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="group-label"># <span data-en="Earlier work" data-de="Frühere Arbeiten">Earlier work</span> <span class="group-label__sub" data-en="· 2013–2015" data-de="· 2013–2015">· 2013–2015</span></h3>
+        <div class="cards">
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">TP</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">Teamplace</h4>
+                <span class="card__year">2015</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="iOS client for the Teamplace cloud storage: file sharing, team collaboration and document versioning. Helped move the team from Objective-C to Swift." data-de="iOS-Client für den Teamplace-Cloud-Speicher: Filesharing, Team-Kollaboration und Dokumenten-Versionierung. Den Umstieg des Teams von Objective-C auf Swift mit vorangetrieben."></p>
+            <div class="chips"><span class="chip">Objective-C</span><span class="chip">Swift</span><span class="chip">Cloud</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/teamplace/01.webp"><img src="assets/screenshots/teamplace/01.webp" alt="Teamplace screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/teamplace/02.webp"><img src="assets/screenshots/teamplace/02.webp" alt="Teamplace screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/teamplace/03.webp"><img src="assets/screenshots/teamplace/03.webp" alt="Teamplace screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">DZ</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">DTZT 2014</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS app for the German Dental Congress (DTZT) in Frankfurt: programme, sessions and venue info. Built at expectare." data-de="Native iOS-App zum Deutschen Zahnärztetag (DTZT) in Frankfurt: Programm, Sessions und Veranstaltungsinfos. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">Event App</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dtzt/01.webp"><img src="assets/screenshots/dtzt/01.webp" alt="DTZT screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dtzt/02.webp"><img src="assets/screenshots/dtzt/02.webp" alt="DTZT screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/dtzt/03.webp"><img src="assets/screenshots/dtzt/03.webp" alt="DTZT screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">CED</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">CED</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS health app supporting people with chronic inflammatory bowel disease. Documentation, organisation and data export by mail. Built with doctors and patients at expectare." data-de="Native iOS-Gesundheits-App zur Unterstützung von Menschen mit chronisch-entzündlichen Darmerkrankungen (CED). Dokumentation, Organisation und Daten-Export per Mail. Mit Ärzten und Betroffenen bei expectare entwickelt."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">HealthTech</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/ced/01.webp"><img src="assets/screenshots/ced/01.webp" alt="CED screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/ced/02.webp"><img src="assets/screenshots/ced/02.webp" alt="CED screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/ced/03.webp"><img src="assets/screenshots/ced/03.webp" alt="CED screenshot 3" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/ced/04.webp"><img src="assets/screenshots/ced/04.webp" alt="CED screenshot 4" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">DA</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">DocApp</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS app for documenting LEGO Serious Play sessions: capture photos, annotate with comment boxes and generate a PDF report. Built at expectare." data-de="Native iOS-App zur Dokumentation von LEGO-Serious-Play-Sessions: Fotos erfassen, mit Kommentarboxen annotieren und einen PDF-Report generieren. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">PDF</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docapp/01.webp"><img src="assets/screenshots/docapp/01.webp" alt="DocApp screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docapp/02.webp"><img src="assets/screenshots/docapp/02.webp" alt="DocApp screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/docapp/03.webp"><img src="assets/screenshots/docapp/03.webp" alt="DocApp screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">TA</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">TrendApp</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS info-feed app on megatrends, with content fed manually via Dropbox so non-technical editors could update it. Built at expectare." data-de="Native iOS-Info-Feed-App zu Megatrends, deren Inhalte ohne technische Kenntnisse manuell über Dropbox gepflegt wurden. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">Dropbox API</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/trendapp/01.webp"><img src="assets/screenshots/trendapp/01.webp" alt="TrendApp screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/trendapp/02.webp"><img src="assets/screenshots/trendapp/02.webp" alt="TrendApp screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/trendapp/03.webp"><img src="assets/screenshots/trendapp/03.webp" alt="TrendApp screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">p2</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">pleg2app</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS health app for MS patients: appointment and injection reminders, a diary, a pharmacy-finder map and a concentration mini-game. Built at expectare." data-de="Native iOS-Gesundheits-App für MS-Patienten: Termin- und Injektionserinnerungen, Tagebuch, Apothekenfinder-Karte und ein Konzentrations-Minispiel. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">HealthTech</span><span class="chip">MapKit</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pleg2app/01.webp"><img src="assets/screenshots/pleg2app/01.webp" alt="pleg2app screenshot 1" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pleg2app/02.webp"><img src="assets/screenshots/pleg2app/02.webp" alt="pleg2app screenshot 2" loading="lazy" width="56" height="80" /></button>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/pleg2app/03.webp"><img src="assets/screenshots/pleg2app/03.webp" alt="pleg2app screenshot 3" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">St</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">Stivarga mCRC</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS health app for people with metastatic colorectal cancer. Integrated DocCheck login for professional medical content and a server CMS for updatable content. Built at expectare." data-de="Native iOS-Gesundheits-App für Menschen mit metastasiertem kolorektalem Karzinom (mCRC). DocCheck-Login für medizinische Fachinhalte und ein Server-CMS für aktualisierbare Inhalte integriert. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">HealthTech</span><span class="chip">CMS</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">PW</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">PadWORK</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="B2B iOS app for guided presentations at events: a master iPad drives connected client iPads over the network, with live polling and Q&A. Replaced long-polling with WebSockets. Built at expectare." data-de="B2B-iOS-App für geführte Event-Präsentationen: ein Master-iPad steuert verbundene Client-iPads übers Netzwerk, mit Live-Abstimmungen und Q&A. Long-Polling durch WebSockets ersetzt. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">WebSockets</span><span class="chip">B2B</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">Da</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">Daimler Apps</h4>
+                <span class="card__year">2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Two native iOS apps for Daimler: theory driving-school exercises for trucks with evaluation, and a location-aware app for vehicle-model info, store details and test-drive bookings. Built at expectare." data-de="Zwei native iOS-Apps für Daimler: theoretische LKW-Fahrschulübungen mit Auswertung sowie eine standortabhängige App für Fahrzeugmodell-Infos, Store-Details und Probefahrt-Buchungen. Bei expectare gebaut."></p>
+            <div class="chips"><span class="chip">iOS</span><span class="chip">B2B</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="card__icon card__icon--mono">YU</span>
+              <div class="card__titlewrap">
+                <h4 class="card__title">Yu-Yuppiu</h4>
+                <span class="card__year">2013 – 2014</span>
+              </div>
+            </div>
+            <p class="card__desc" data-en="Native iOS chat and dating app (Tinder-style). Built the profile area and registration flow, Facebook integration and the server and data layer at datedicted." data-de="Native iOS-Chat- und Dating-App (Tinder-Stil). Profilbereich und Registrierungs-Flow, Facebook-Integration sowie die Server- und Datenschicht bei datedicted gebaut."></p>
+            <div class="chips"><span class="chip">Objective-C</span><span class="chip">Facebook SDK</span><span class="chip">AWS S3</span></div>
+            <div class="shots" data-shots>
+              <button class="shots__thumb" type="button" data-full="assets/screenshots/yuyuppiu/01.webp"><img src="assets/screenshots/yuyuppiu/01.webp" alt="Yu-Yuppiu screenshot 1" loading="lazy" width="56" height="80" /></button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 04 SKILLS -->
+      <section id="skills" class="section">
+        <p class="section__label">// 04 · <span data-en="SKILLS" data-de="SKILLS">SKILLS</span></p>
+        <div class="skillgrid">
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="LANGUAGES" data-de="SPRACHEN">LANGUAGES</h4>
+            <div class="chips"><span class="chip">Swift</span><span class="chip">Kotlin</span><span class="chip">TypeScript</span><span class="chip">Objective-C</span><span class="chip">C#</span><span class="chip">Java</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head">iOS</h4>
+            <div class="chips"><span class="chip">SwiftUI</span><span class="chip">UIKit</span><span class="chip">Combine</span><span class="chip">Swift Concurrency</span><span class="chip">TCA</span><span class="chip">MVVM</span><span class="chip">SPM</span><span class="chip">StoreKit</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="APPLE SDKs / AR / AI" data-de="APPLE SDKs / AR / KI">APPLE SDKs / AR / AI</h4>
+            <div class="chips"><span class="chip">ARKit</span><span class="chip">RoomPlan</span><span class="chip">AVFoundation</span><span class="chip">On-device LLM</span><span class="chip">LLM API</span><span class="chip">Streaming UX</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="BACKEND / FULL-STACK" data-de="BACKEND / FULL-STACK">BACKEND / FULL-STACK</h4>
+            <div class="chips"><span class="chip">Swift Vapor</span><span class="chip">Kotlin Spring Boot</span><span class="chip">Java Spring Boot</span><span class="chip">REST</span><span class="chip">WebSockets</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="CROSS-PLATFORM" data-de="CROSS-PLATFORM">CROSS-PLATFORM</h4>
+            <div class="chips"><span class="chip">Kotlin (Android)</span><span class="chip">Jetpack Compose</span><span class="chip">Xamarin (C#)</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="CLOUD / DEVOPS" data-de="CLOUD / DEVOPS">CLOUD / DEVOPS</h4>
+            <div class="chips"><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">OpenShift</span><span class="chip">Terraform</span><span class="chip">Jenkins</span><span class="chip">Xcode Cloud</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="DATABASES" data-de="DATENBANKEN">DATABASES</h4>
+            <div class="chips"><span class="chip">SwiftData / CoreData</span><span class="chip">MSSQL</span><span class="chip">MariaDB</span><span class="chip">Azure DB</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="TEAM / DELIVERY" data-de="TEAM / DELIVERY">TEAM / DELIVERY</h4>
+            <div class="chips"><span class="chip">Team Leadership</span><span class="chip">Stakeholder mgmt</span><span class="chip">CI/CD</span><span class="chip">Mentoring</span></div>
+          </div>
+          <div class="skillcol">
+            <h4 class="skillcol__head" data-en="METHODS / CERTS" data-de="METHODEN / ZERTIFIKATE">METHODS / CERTS</h4>
+            <div class="chips"><span class="chip">Project Management</span><span class="chip">Quality Mgmt (ISO 9001)</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 CONTACT -->
+      <section id="contact" class="section section--contact">
+        <p class="section__label">// 05 · <span data-en="CONTACT" data-de="KONTAKT">CONTACT</span></p>
+        <h2 class="headline">
+          <span data-en="Let's build something." data-de="Lass uns etwas bauen.">Let's build something.</span>
+        </h2>
+        <p class="lede" data-en="Bali-based, fully remote (GMT+8). Open to senior iOS, tech-lead and full-stack-Swift roles, and to interesting freelance work. The fastest way to reach me is email."
+           data-de="Ansässig auf Bali, voll remote (GMT+8). Offen für Senior-iOS-, Tech-Lead- und Full-Stack-Swift-Rollen sowie spannende Freelance-Projekte. Am schnellsten erreichst du mich per E-Mail.">
+        </p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:sebastian.volling@icloud.com">→ Email <span class="contact-link__v">sebastian.volling@icloud.com</span></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/sebastian-volling-9955a982" target="_blank" rel="noopener">→ LinkedIn <span class="contact-link__v">/sebastian-volling</span></a>
+          <a class="contact-link" href="https://github.com/eirias" target="_blank" rel="noopener">→ GitHub <span class="contact-link__v">/eirias</span></a>
+          <a id="resume-link-2" class="contact-link" href="assets/cv/CV-EN.pdf" download>→ <span data-en="Résumé" data-de="Lebenslauf">Résumé</span> <span class="contact-link__v" data-en="PDF download" data-de="PDF herunterladen">PDF download</span></a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year">2026</span> Sebastian Volling</span>
+        <span class="footer__sig">built with Swift-grade attention to detail · no frameworks, just HTML/CSS/JS</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
