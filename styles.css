@@ -286,3 +286,13 @@ a { color: inherit; text-decoration: none; }
   .lightbox__nav--prev { left: 8px; }
   .lightbox__nav--next { right: 8px; }
 }
+
+/* print / PDF export */
+@media print {
+  .lightbox, .termbar, .nav, .resume-btn, .cursor { display: none !important; }
+  .layout { display: block; }
+  .card, .job, .skillcol, .stat, .contact-link { break-inside: avoid; }
+  .section { break-before: page; }
+  .section:first-of-type { break-before: auto; }
+  a { text-decoration: none; }
+}
