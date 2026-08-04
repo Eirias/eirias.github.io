@@ -1,35 +1,12 @@
 /* ============================================================
-   Portfolio interactions: theme + language + nav scrollspy.
+   Portfolio interactions: language + nav scrollspy.
    State persists in localStorage. No dependencies.
    ============================================================ */
 (function () {
   "use strict";
 
   var root = document.documentElement;
-  var STORE_THEME = "sv-theme";
   var STORE_LANG = "sv-lang";
-
-  /* ---------- theme ---------- */
-  function applyTheme(theme) {
-    root.setAttribute("data-theme", theme);
-    var label = document.getElementById("theme-label");
-    if (label) label.textContent = theme;
-  }
-
-  var savedTheme = localStorage.getItem(STORE_THEME);
-  if (!savedTheme) {
-    savedTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
-  applyTheme(savedTheme);
-
-  var themeBtn = document.getElementById("theme-toggle");
-  if (themeBtn) {
-    themeBtn.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      applyTheme(next);
-      localStorage.setItem(STORE_THEME, next);
-    });
-  }
 
   /* ---------- language ---------- */
   function applyLang(lang) {
