@@ -19,7 +19,7 @@
     var label = document.getElementById("lang-label");
     if (label) label.textContent = lang.toUpperCase();
 
-    // point résumé downloads at the matching-language PDF
+    // point CV downloads at the matching-language PDF
     var cv = lang === "de" ? "assets/cv/CV-DE.pdf" : "assets/cv/CV-EN.pdf";
     ["resume-link", "resume-link-2"].forEach(function (id) {
       var el = document.getElementById(id);
